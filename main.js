@@ -25,10 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         : `${hour - 12} : ${min} : ${sec}`;
   };
 
-  window.onload = function () {
-    setClock();
-    setInterval(setClock, 1000); // 1초 간격으로 secClock 함수 실행.
-  };
+  setInterval(setClock, 1000); // 1초 간격으로 secClock 함수 실행.
 
   const battery = document.querySelector(".battery");
   const screen = document.querySelector(".screen");
