@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const setClock = () => {
     const today = new Date();
     const year = today.getFullYear();
-    const month = today.getMonth() + 1; // 월은 011(112)
+    const month = today.getMonth() + 1; // 월은 0-11(1-12)
     const day = today.getDate();
     const hour = today.getHours();
     const min = modifyNumber(today.getMinutes());
@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const battery = document.querySelector(".battery");
   const screen = document.querySelector(".screen");
+  const showAddModal = document.querySelector(".addModal");
+  const showListModal = document.querySelector(".listModal");
+  const openListBtn = document.querySelector("#list");
+  const openAddBtn = document.querySelector("#add");
 
   let batteryLevel = 100;
 
@@ -46,7 +50,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(decreaseBattery, 1000);
 
-  /* if(추가한 시간(nweListItem)) === 스크린시간(time)) {
-  time.style.color = "red";
-  }*/
+  openListBtn.addEventListener("click", () => {
+    if (screen.style.background === "black") {
+      return;
+    }
+    showListModal.style.display = "block";
+  });
+
+  openAddBtn.addEventListener("click", () => {
+    if (screen.style.background === "black") {
+      return;
+    }
+    showAddModal.style.display = "block";
+  });
 });

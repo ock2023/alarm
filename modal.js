@@ -1,31 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const showAddModal = document.querySelector(".addModal");
-  const openAddBtn = document.querySelector("#add");
   const closeAddBtn = document.querySelector("#add--close--btn");
   const addBtn = document.querySelector("#add--btn");
-
   const showListModal = document.querySelector(".listModal");
-  const openListBtn = document.querySelector("#list");
   const closeListBtn = document.querySelector("#list--close--btn");
 
-  // const nanbtn = () => {
-  //   const screen = document.querySelector(".screen");
-  //   if (screen.style.background === "balck") {
-  //     return;
-  //   }
-  // };
-
-  openAddBtn.addEventListener("click", () => {
-    showAddModal.style.display = "block";
-    // nanbtn();
-  });
   closeAddBtn.addEventListener("click", () => {
     showAddModal.style.display = "none";
-  });
-
-  openListBtn.addEventListener("click", () => {
-    showListModal.style.display = "block";
-    // nanbtn();
   });
 
   closeListBtn.addEventListener("click", () => {
