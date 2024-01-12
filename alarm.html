@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <link href="main.css" rel="stylesheet" />
+    <link href="listModal.css" rel="stylesheet" />
+    <link href="addModal.css" rel="stylesheet" />
+    <script src="modal.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="screen">
+          <div class="screen--header">
+            <span class="date"></span>
+            <span class="battery"></span>
+          </div>
+          <div class="screen--body">
+            <span class="AMPM"></span>
+            <span class="time"></span>
+          </div>
+        </div>
+        <div class="button">
+          <button class="btn" id="list">알람목록</button>
+          <button class="btn" id="add">알람추가</button>
+        </div>
+      </section>
+      <div class="listModal">
+        <div class="list--container">
+          <div class="list--screen">
+            <!-- <div class="list--time"></div>
+            <div class="list--time"></div>
+            <div class="list--time"></div> -->
+          </div>
+          <div class="list--close--btns">
+            <button class="btn" id="list--close--btn">닫기</button>
+          </div>
+        </div>
+      </div>
+      <div class="addModal">
+        <div class="add--container">
+          <input type="text" id="add--input" />
+          <div class="add--btns">
+            <button class="btn" id="add--close--btn">닫기</button>
+            <button class="btn" id="add--btn">추가</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

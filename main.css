@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* main을 화면 전체높이를 차지하도록 하기 위해 추가 */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  height: 500px;
+  width: 800px;
+  border: solid 1px #000000;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  height: 350px;
+  border: solid 2px rgb(144, 140, 140);
+  border-radius: 12px;
+  background-color: rgb(202, 197, 197);
+}
+
+.screen--header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.date {
+  position: relative;
+  left: 30px;
+}
+
+.battery {
+  position: relative;
+  right: 30px;
+}
+
+.screen--body {
+  position: relative;
+  top: 50px;
+}
+
+.AMPM {
+  font-size: 30px;
+  position: relative;
+  right: 10px;
+}
+
+.time {
+  font-size: 100px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.btn {
+  width: 120px;
+  height: 70px;
+  border: none;
+  border-radius: 12px;
+  background-color: #4283d3;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #285183;
+}
+
+#list {
+  position: relative;
+  left: 50px;
+}
+
+#add {
+  position: relative;
+  right: 50px;
+}
